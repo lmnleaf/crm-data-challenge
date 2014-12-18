@@ -7,9 +7,10 @@ final_array = []
 
   CRM[:companies].each do |company|
 
-    company_hash = {}
     array = []
+    company_hash = {}
     company_hash[:name] = company[:name]
+
     CRM[:people].each do |person|
 
       person[:employments].each do |employment|
